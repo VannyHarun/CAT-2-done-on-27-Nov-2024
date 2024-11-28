@@ -34,7 +34,7 @@
         .dp4 input{
             margin-inline-start: 84px;
         }
-        .dp5 input{
+        .dp5 select{
             margin-inline-start: 74px;
         }
         .dp6 input{
@@ -90,12 +90,11 @@
             <div class="comment">Format:Use 5 or 9 digits Zip Cod</div>
         </div>
         <div class="dp5">
-            <label for="card type">Card Type:</label>
-            <input list="Visa" value="Visa">
-            <datalist id="Visa">
-                <option value="Visa"></option>
-                <option value="Master Card"></option>
-            </datalist>
+            <label for="cardType">Card Type:</label>
+  <select id="cardType" name="cardType">
+    <option value="visa">Visa</option>
+    <option value="mastercard">Mastercard</option>
+    </select>
             </div>
             <div class="dp6">
                 <label for="number">Card Number:</label>
