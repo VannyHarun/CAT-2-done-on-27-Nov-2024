@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .space-between{
+            color: red;
+            margin-inline-start: 40px;
+            
+        }
+        input{
+            margin-inline-start: 80px;
+            padding:5px;
+            margin: 3px;
+            
+        }
+        .dp input{
+            margin-inline-start: 80px;
+        }
+        .dp1 input{
+            margin-inline-start: 85px;
+        }
+        .dp2 input{
+            margin-inline-start:108px ;
+        }
+        .dp3 input{
+            margin-inline-start: 50px;
+        }
+        .dp4 input{
+            margin-inline-start: 84px;
+        }
+        .dp5 input{
+            margin-inline-start: 74px;
+        }
+        .dp6 input{
+            margin-inline-start: 50px;
+        }
+        .dp7 input{
+            margin-inline-start: 40px;
+        }
+        form{
+            margin: 15px;
+        }
+        .comment{
+        margin-inline-start: 150px;
+        }
+        .button{
+            display: flex;
+            justify-content: space-between;
+        margin: 0.5% 35%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register Account</h1>
+    <form action="Register Account">
+        <div class="dp">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" value="as" pattern="(?=*[A-z])(?=.*[a-z])"
+            title="User name must be atleast 4 character" required>
+            <span class="space-between">Username must be atleast 4 characters</span>
+        </div>
+        <div class="dp1">
+            <label for="Password">Password:</label>
+            <input type="password" id="name" value="12" pattern="(?=*[A-z])(?=.*[a-z])"
+            title="User name must be atleast 4 character"required>
+            <span class="space-between">Password must be at least 4 characters</span>
+        </div>
+        <div class="dp2">
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" value="john@gmail" pattern="(?=.*john@gmail.com)" title="Inalid email format" required >
+            <span class="space-between">Invalid email format</span><br>
+           <div class="comment"> Format:john@gmail.com</div>
+         </div>
+        <div class="dp3">
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" name="number" value="11111111111111111" pattern="(?=.*\d)" title="number" required >
+            <span class="space-between">Invalid phone number</span><br>
+           <div class="comment"> Format:0XX-XXX-XXX</div>
+        </div>
+        <div class="dp4">
+            <label for="number">Zip Code:</label>
+            <input type="text" id="number" name="number" value="111111111111111111111111" pattern="(?=.*\d)" title="number" required >
+            <span class="space-between">Invalid Zip Code</span><br>
+            <div class="comment">Format:Use 5 or 9 digits Zip Cod</div>
+        </div>
+        <div class="dp5">
+            <label for="card type">Card Type:</label>
+            <input list="Visa" value="Visa">
+            <datalist id="Visa">
+                <option value="Visa"></option>
+                <option value="Master Card"></option>
+            </datalist>
+            </div>
+            <div class="dp6">
+                <label for="number">Card Number:</label>
+                <input type="text" id="number" name="number" value="1111111111111111111111" pattern="(?=.*\d)" title="number" required >
+                <span class="space-between">Invalid card number format</span><br>
+                <div class="comment">Format:1111-2222-3333-4444</div>
+            </div>
+            <div class="dp7">
+                <label for="number">Expiration Date:</label>
+                <input type="text" id="number" name="number" value="111111111111111111111111" pattern="(?=.*\d)" title="number" required >
+                <span class="space-between">Invalid date format</span><br>
+                <div class="comment">Format:YYYY-MM-DD</div>
+            </div>
+        <div class="button">
+            <button type="submit">Register</button>
+            <button type="reset">Clear Form</button>
+        </div>
+
+    </form>
+</body>
+</html>
